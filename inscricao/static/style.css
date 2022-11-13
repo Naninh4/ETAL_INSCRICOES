@@ -1,0 +1,27 @@
+.table, .table-overflow {
+    max-height:400px;
+    overflow-y:auto;
+}
+tr{
+    margin: 10;
+}
+.btn{
+    float: right;
+    background-color:  rgb(154, 17, 182) !important;
+    border-color:  rgb(154, 17, 182) !important; ;
+}
+main{
+    margin: auto;
+}
+div#formulario{
+    margin-bottom: 200px !important;
+    margin-top: 50px !important;
+}
+
+h1{
+    color:rgb(154, 17, 182) !important;
+}
+h2{
+    color: rgb(154, 17, 182);
+    text-align: center;
+}
