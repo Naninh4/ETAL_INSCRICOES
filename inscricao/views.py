@@ -5,17 +5,20 @@ from inscricao.models import Candidato
 
 def home (request):
     return render(request, 'index.html')
+
 def get_cadastros(request):
-    if request.method == 'POST':
+    if request.method == "POST":
+
         form = CandidatoForm(request.POST) #Armazenando o formulário criado a uma lista
+        print(request.POST)
         if form.is_valid():
-            print(request.POST)
+            
             alter_form = form.save(commit=False)
             alter_form.mini_cursos = " | ".join(dict(request.POST)['mini_cursos'])
 
             alter_form.save()
 
-            return redirect("/")
+            return redirect("/cadastro")
         else:
             form = CandidatoForm
 

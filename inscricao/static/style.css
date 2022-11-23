@@ -7,11 +7,24 @@ tr{
 }
 .btn{
     float: right;
-    background-color:  rgb(154, 17, 182) !important;
-    border-color:  rgb(154, 17, 182) !important; ;
+    background-color:  rgb(182, 17, 17) !important;
+    border-color:  rgb(182, 17, 17)!important;
+    color: white !important;
+}
+#btnCad{
+    color: white !important;
 }
 main{
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sectionhome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 div#formulario{
     margin-bottom: 200px !important;
@@ -19,9 +32,9 @@ div#formulario{
 }
 
 h1{
-    color:rgb(154, 17, 182) !important;
+    color:rgb(182, 17, 17) !important;
 }
 h2{
-    color: rgb(154, 17, 182);
+    color: rgb(182, 17, 17) !important;
     text-align: center;
 }

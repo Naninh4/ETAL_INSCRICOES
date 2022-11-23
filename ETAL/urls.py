@@ -16,10 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from inscricao.models import Candidato
-from inscricao.views import get_cadastros
+from inscricao.views import get_cadastros, home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',get_cadastros, name= 'get_cadastro')
-    
+    path('cadastro',get_cadastros, name= 'get_cadastro'),
+    path('',home, name = "home")  
 ]
