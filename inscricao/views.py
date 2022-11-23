@@ -3,7 +3,8 @@ from inscricao.forms import CandidatoForm
 from inscricao.models import Candidato
 # Create your views here.
 
-
+def home (request):
+    return render(request, 'index.html')
 def get_cadastros(request):
     if request.method == 'POST':
         form = CandidatoForm(request.POST) #Armazenando o formulário criado a uma lista
